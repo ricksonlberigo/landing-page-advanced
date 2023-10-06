@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato';
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/* UTILITIES CLASSES */
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-image: url('../img/hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo img {
+    width: 190px;
+}
+
+.main-title {
+    font-size: 70px;
+    font-weight: 300;
+    width: 15ch;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 20px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: #0A0B36;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.hero-background img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* SOLUCTION SECTION */
+.soluctions {
+    background: #0A0B36;
+}
+
+.soluctions .container {
+    padding: 40px 0;
+}
+
+.soluctions h2 {
+    color: white;
+    font-size: 74px;
+    font-weight: normal;
+    max-width: 6ch;
+    margin-left: 180px;
+    position: relative;
+}
+
+.soluctions h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 160px;
+    background: #EF7142;
+    position: absolute;
+    top: 60px;
+    right: -220px;
+    transform: rotate(-160deg);
+}
+
+.desc-soluction {
+    margin-left: 180px;
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.testimonies {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.testimonies h3 {
+    font-size: 32px;
+    font-weight: medium;
+}
+
+.testimonie h4 {
+    font-size: 18px;
+    font-weight: medium;
+    text-align: center;
+    max-width: 10ch;
+}
+
+.testimonie {
+    padding: 20px 60px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-client {
+    display: flex;
+    color:  #0A0B36;
+    align-items: end;
+    gap: 50px;
+}
+
+/* PRODUCTS */
+.products .container {
+    padding: 20px;
+}
+
+.products h2 {
+    font-size: 74px;
+    font-weight: medium;
+}
+
+.products p.detail {
+    font-size: 22px;
+    line-height: 1.4;
+    position: relative;
+    margin-top: 40px;
+    text-align: left;
+    max-width: 650px;
+    margin-left: 320px;
+}
+
+.products p.detail::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 160px;
+    background: #EF7142;
+    position: absolute;
+    top: -25px;
+    left: -50px;
+    transform: rotate(-160deg);
+}
+
+.cards {
+    margin-top: 120px;
+}
+
+.card {
+    padding: 40px;
+    border: 1px solid black;
+}
+
+.card .header {
+    display: flex;
+    align-items: center;
+}
+
+.card .header a {
+    padding: 20px;
+    background: #0A0B36;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.card .header h3 {
+    font-size: 24px;
+}
