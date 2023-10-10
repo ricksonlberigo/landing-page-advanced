@@ -38,9 +38,9 @@
       property="og:description"
       content="Oferecemos soluções empresariais e serviços de contabilidade para empresas. Conte com nossa experiência para o sucesso do seu negócio."
     />
-    <!-- <link rel="stylesheet" href="./src/style/style.css" />
-    <link rel="stylesheet" href="./src/style/responsive.css" /> -->
-    <link rel="stylesheet" href="./src/style/style.min.css" />
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="stylesheet" href="./src/style/responsive.css" />
+    <!-- <link rel="stylesheet" href="./src/style/style.min.css" /> -->
     <script
       src="https://kit.fontawesome.com/e52263f0c5.js"
       crossorigin="anonymous"
@@ -416,6 +416,25 @@
       </footer>
     </main>
 
-    <script src="./src/js/app.js"></script>
+    <script>
+      const accordion = document.getElementsByClassName('container-accordion')
+
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener('click', function () {
+          this.classList.toggle('active')
+        })
+      }
+
+      // Captura o elemento do iframe
+      const iframe = document.getElementById('iframe')
+
+      // Adiciona um ouvinte de evento para pausar o vídeo quando carregado
+      iframe.addEventListener('load', function () {
+        iframe.contentWindow.postMessage(
+          '{"event":"command","func":"pauseVideo","args":""}',
+          '*',
+        )
+      })
+    </script>
   </body>
 </html>

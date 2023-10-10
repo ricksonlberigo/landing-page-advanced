@@ -6,6 +6,10 @@
     background: #fafafa;
   }
 
+  .main-title {
+    font-size: 56px;
+  }
+
   .main-title::before {
     display: none;
   }
@@ -144,6 +148,10 @@
     background: #fafafa;
   }
 
+  .logo img {
+    width: 130px;
+  }
+
   .hero-background {
     display: none;
   }
@@ -154,6 +162,10 @@
 
   .main-title::before {
     display: none;
+  }
+
+  .btn {
+    padding: 10px 20px;
   }
 
   .about .container {
@@ -181,35 +193,32 @@
   }
 
   .info-client {
-    gap: 10px;
+    gap: 5px;
   }
 
   .testimonies {
     margin-top: 20px;
   }
 
-  .testimonie {
-    padding: 20px;
-  }
-
-  .testimonie header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   .testimonie .people {
     display: flex;
     align-items: end;
-    gap: 20px;
+    gap: 10px;
   }
 
-  .testimonie .people p {
-    font-size: 12px;
+  .testimonie {
+    padding: 10px;
+    height: 180px;
+  }
+
+  .testimonie header {
+    justify-content: space-evenly;
   }
 
   .testimonie h4 {
-    font-size: 12px;
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
   }
 
   .testimonie-video {
@@ -411,5 +420,26 @@
 
   footer .container p::before {
     display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-title {
+    font-size: 32px;
+  }
+
+  form {
+    width: 100%;
+    text-align: left;
+  }
+
+  .input-group input {
+    width: 100%;
+  }
+
+  .form form button {
+    margin: 0 auto;
+    width: 210px;
+    padding: 10px;
   }
 }
